@@ -1,142 +1,145 @@
+/* Configurações Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    /* Configurações Globais */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214;
+    color: #e1e1e6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #121214;
-        color: #e1e1e6;
-        padding: 20px;
-        max-width: 900px;
-        margin: 0 auto;
-        position: relative;
-    }
+/* Imagem da Logo no Canto Superior Direito */
+.logo-canto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 110px;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6));
+}
 
-    /* Imagem da Logo no Canto Superior Direito */
-    .logo-canto {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 110px;
-        height: auto;
-        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
-    }
+/* Cabeçalho */
+header {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-right: 130px; /* Evita sobreposição com a logo */
+}
 
-    /* Cabeçalho */
-    header {
-        margin-top: 10px;
-        margin-bottom: 25px;
-        padding-right: 130px; /* Abre espaço para a logo não cobrir o texto */
-    }
+h1 {
+    color: #ffcc00;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
-    h1 {
-        color: #ffcc00;
-        font-size: 2.2rem;
-        margin-bottom: 8px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
+header p {
+    color: #a8a8b3;
+    font-size: 1.1rem;
+}
 
-    header p {
-        color: #a8a8b3;
-        font-size: 1.1rem;
-    }
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
 
-    /* Menu de Navegação */
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-        margin: 15px 0;
-    }
+nav ul li a {
+    background-color: #202024;
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #ffcc00;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
 
-    nav ul li a {
-        background-color: #202024;
-        color: #ffcc00;
-        text-decoration: none;
-        padding: 10px 16px;
-        border-radius: 8px;
-        font-weight: bold;
-        border: 1px solid #ffcc00;
-        display: inline-block;
-        transition: 0.2s;
-    }
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #121214;
+    transform: translateY(-2px);
+}
 
-    nav ul li a:hover {
-        background-color: #ffcc00;
-        color: #121214;
-    }
+hr {
+    border: 0;
+    height: 1px;
+    background: #323238;
+    margin: 25px 0;
+}
 
-    hr {
-        border: 0;
-        height: 1px;
-        background: #323238;
-        margin: 25px 0;
-    }
+/* Títulos de Seções e Conteúdo */
+h2 {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffcc00;
+    padding-left: 10px;
+}
 
-    /* Estilização dos Títulos de Seção */
-    h2 {
-        color: #ffcc00;
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        border-left: 4px solid #ffcc00;
-        padding-left: 10px;
-    }
+h3 {
+    color: #00d2ff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
-    h3 {
-        color: #00d2ff;
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
+p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #c4c4cc;
+}
 
-    p {
-        margin-bottom: 8px;
-        line-height: 1.6;
-    }
+/* Tabela de Modos de Jogo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #1e1e24;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    /* Tabela de Modos de Jogo */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-        background-color: #1e1e24;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #323238;
+}
 
-    th, td {
-        padding: 12px 15px;
-        text-align: left;
-        border: 1px solid #323238;
-    }
+th {
+    background-color: #ffcc00;
+    color: #121214;
+    font-size: 1rem;
+}
 
-    th {
-        background-color: #ffcc00;
-        color: #121214;
-        font-size: 1rem;
-    }
+tr:nth-child(even) {
+    background-color: #29292e;
+}
 
-    tr:nth-child(even) {
-        background-color: #29292e;
-    }
+/* Lista de Dicas */
+ol {
+    margin-left: 20px;
+    line-height: 1.8;
+    color: #c4c4cc;
+}
 
-    /* Listas de Dicas */
-    ol {
-        margin-left: 20px;
-        line-height: 1.8;
-    }
+ol li {
+    margin-bottom: 10px;
+}
 
-    ol li {
-        margin-bottom: 10px;
-    }
-
-    /* Rodapé */
-    footer {
-        text-align: center;
-        color: #7c7c8a;
-        font-size: 0.9rem;
-        padding: 10px 0;
-    }
+/* Rodapé */
+footer {
+    text-align: center;
+    color: #7c7c8a;
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
